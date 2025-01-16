@@ -7,31 +7,31 @@ export class CrestCounterService {
   public crests = [
     {
       Name: "ATK",
-      ImageURL: '/crests/ATK.png',
+      ImageURL: './crests/ATK.png',
       Counter: 0,
       ID: 1,
     },
     {
       Name: "DEF",
-      ImageURL: '/crests/DEF.png',
+      ImageURL: './crests/DEF.png',
       Counter: 0,
       ID: 2,
     },
     {
       Name: "Trap",
-      ImageURL: '/crests/Trap.png',
+      ImageURL: './crests/Trap.png',
       Counter: 0,
       ID: 3,
     },
     {
       Name: "Magic",
-      ImageURL: '/crests/Magic.png',
+      ImageURL: './crests/Magic.png',
       Counter: 0,
       ID: 4,
     },
     {
       Name: "Mov",
-      ImageURL: '/crests/Mov.png',
+      ImageURL: './crests/Mov.png',
       Counter: 0,
       ID: 5,
     }

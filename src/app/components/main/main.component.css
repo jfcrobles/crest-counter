@@ -64,3 +64,15 @@ img {
     color: #121212;
     cursor: not-allowed;
 }
+
+@media (max-height: 400px) {    
+    img {
+        width: 65px;
+        height: 65px;
+    }
+    .icon-top button,
+    .icon-bottom button,
+    .counter-container {
+        font-size: xx-large;
+    }
+}
