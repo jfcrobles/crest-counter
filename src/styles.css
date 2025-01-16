@@ -3,3 +3,8 @@ body {
     margin: 0;
     background-color: #121212;
 }
+
+* {
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
