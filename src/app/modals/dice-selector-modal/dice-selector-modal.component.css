@@ -1,0 +1,208 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.modal-container {
+    background: #333;
+    width: 450px;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-height: 90%;
+    overflow-y: auto;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.modal-title {
+    font-size: 24px;
+    margin: 0;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.modal-content {
+    margin-top: 20px;
+    text-align: center;
+    flex: 1;
+}
+
+.modal-footer {
+    margin-top: 20px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+
+.close-icon {
+    font-size: 30px;
+    cursor: pointer;
+    color: red;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.switch-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.switch .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.switch .slider::before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+}
+
+input:checked+.slider {
+    background-color: #4caf50;
+}
+
+input:checked+.slider::before {
+    transform: translateX(26px);
+}
+
+.images-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.crest-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.crest-image:hover {
+    transform: scale(1.1);
+}
+
+.crest-image-by-dice {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.icon-top button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: xxx-large;
+    color: white;
+    padding: 0;
+}
+
+.icon-bottom button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: xxx-large;
+    color: white;
+    padding: 0;
+}
+
+.roll-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .roll-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .roll-button:hover {
+    background-color: #45a049;
+  }
+  
+  .roll-button:active {
+    background-color: #3e8e41;
+  }
+
+  @media (max-height: 400px) {
+    .crest-image-by-dice{
+        width: 65px;
+        height: 65px;
+    }
+
+    .icon-bottom button {
+        font-size: xx-large;
+    }
+
+    .icon-top button {
+        font-size: xx-large;
+    }
+  }

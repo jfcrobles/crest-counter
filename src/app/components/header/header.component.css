@@ -1,0 +1,78 @@
+/* General styles for the header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    /* Distribuye los íconos equitativamente */
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    height: 60px;
+}
+
+/* Icon container */
+.icon {
+    font-size: 24px;
+    /*flex: 0;  Asegura que los íconos no se expandan */
+}
+
+/* Center icon */
+.center {
+    flex: 1;
+    /* Toma el espacio restante para centrar el ícono */
+    text-align: center;
+}
+
+/* Left and right icons */
+.left {
+    text-align: left;
+    display: flex;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.right {
+    text-align: right;
+}
+
+/* Optional: Add some spacing to ensure alignment feels natural */
+.left,
+.right {
+    width: 90px;
+}
+
+.fa-heart {
+    color: red
+        /*rgb(145, 7, 7);*/
+}
+
+.fa-heart:hover,
+.fa-heart-broken:hover {
+    transform: scale(1.1);
+}
+
+.fa-heart-broken {
+    color: whitesmoke
+}
+
+.fa-redo,
+.fa-compress,
+.fa-expand {
+    cursor: pointer;
+}
+
+.fa-redo:hover,
+.fa-compress:hover,
+.fa-expand:hover {
+    transform: scale(1.1);
+}
+
+@media (min-height: 500px) and (min-width: 500px) {
+    .icon {
+        font-size: xxx-large;
+    }
+
+    .left {
+        width: 160px;
+    }
+}

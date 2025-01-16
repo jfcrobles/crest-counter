@@ -1,0 +1,8 @@
+<footer class="footer">
+    <div class="icon">
+        <i class="fas fa-dice-six" (click)="openModal()"></i>
+    </div>
+    <app-dice-selector-modal (closeModal)="closeDiceSelectorModal()"></app-dice-selector-modal>
+
+    <app-dice-roller-modal (closeModal)="closeDiceRollerModal()"></app-dice-roller-modal>
+</footer>

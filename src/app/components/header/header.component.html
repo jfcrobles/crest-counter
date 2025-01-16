@@ -1,0 +1,14 @@
+<header class="header">
+    <div class="icon left">
+        <i *ngFor="let heart of hearts; let i = index" class="fas" [ngClass]="heart ? 'fa-heart' : 'fa-heart-broken'"
+            (click)="toggleHeart(i)">
+        </i>
+    </div>
+    <div class="icon center">
+        <i class="fas fa-redo" (click)="reset()"></i>
+    </div>
+    <div class="icon right">
+        <i class="fas" [ngClass]="isFullscreen ? 'fa-compress' : 'fa-expand'" (click)="toggleFullscreen()">
+        </i>
+    </div>
+</header>
