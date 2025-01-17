@@ -65,7 +65,7 @@ img {
     cursor: not-allowed;
 }
 
-@media (max-height: 400px) {    
+@media (max-height: 500px) {    
     img {
         width: 65px;
         height: 65px;
